@@ -1,127 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
     <title>Koding Studio SG - Custom Games & Mobile Apps</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Readex+Pro:400,500,600,700&amp;subset=latin"/>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&amp;display=swap" rel="stylesheet"/>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-        .gradient-text {
-            background: -webkit-linear-gradient(#4d90fe, #88c1ff);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-    </style>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body class="bg-gray-900 text-white">
-
-    <!-- Header -->
-    <header class="absolute top-0 left-0 right-0 z-10">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <h1 class="text-2xl font-bold">Koding Studio SG</h1>
-            <nav class="hidden md:flex space-x-8">
-                <a href="#services" class="hover:text-blue-400">Services</a>
-                <a href="#portfolio" class="hover:text-blue-400">Portfolio</a>
-                <a href="#contact" class="hover:text-blue-400">Contact</a>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js" defer="defer"></script>
+  </head>
+  <body class="antialiased bg-body text-body font-body" style="font-family: 'Figtree', sans-serif;">
+    <div>
+      <div>
+        <section class="bg-orange-50" x-data="{ mobileNavOpen: false }">
+          <nav class="py-6 border-b">
+            <div class="container mx-auto px-4">
+              <div class="relative flex items-center justify-between">
+                <a class="inline-block text-2xl font-bold text-teal-900" href="#">Koding Studio SG</a>
+                <div class="flex items-center justify-end">
+                  <button class="md:hidden navbar-burger text-teal-900 hover:text-teal-800" x-on:click="mobileNavOpen = !mobileNavOpen">
+                    <svg width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.19995 23.2H26.7999" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M5.19995 16H26.7999" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M5.19995 8.79999H26.7999" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <div class="relative pt-18">
+            <div class="container mx-auto px-4 relative">
+              <div class="max-w-lg xl:max-w-xl mx-auto mb-12 lg:mb-0 text-center">
+                <div class="flex mb-6 items-center justify-center">
+                </div>
+                <h1 class="font-heading text-5xl xs:text-7xl xl:text-8xl tracking-tight mb-8 font-semibold" style="font-family: 'Readex Pro', sans-serif;">The Future of Interactive Fun</h1>
+              </div>
+              <div class="flex -mx-4 items-end relative">
+                 <div class="absolute bottom-0 left-0 w-full py-32 bg-gradient-to-t from-orange-50 to-transparent"></div>
+              </div>
+            </div>
+          </div>
+          <div class="hidden fixed top-0 left-0 bottom-0 w-full xs:w-5/6 xs:max-w-md z-50" :class="{'block': mobileNavOpen, 'hidden': !mobileNavOpen}">
+            <div class="fixed inset-0 bg-violet-900 opacity-20" x-on:click="mobileNavOpen = !mobileNavOpen"></div>
+            <nav class="relative flex flex-col py-7 px-10 w-full h-full bg-white overflow-y-auto">
+              <div class="flex items-center justify-between">
+                <a class="inline-block text-xl font-bold" href="#">Koding Studio SG</a>
+                <button x-on:click="mobileNavOpen = !mobileNavOpen">
+                  <svg width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23.2 8.79999L8.80005 23.2M8.80005 8.79999L23.2 23.2" stroke="#1D1F1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="pt-20 pb-12 mb-auto">
+                <ul class="flex-col">
+                  <li class="mb-6"><a class="inline-block text-teal-900 hover:text-teal-700 font-medium" href="#services">Services</a></li>
+                  <li class="mb-6"><a class="inline-block text-teal-900 hover:text-teal-700 font-medium" href="#portfolio">Portfolio</a></li>
+                  <li><a class="inline-block text-teal-900 hover:text-teal-700 font-medium" href="#contact">Contact Us</a></li>
+                </ul>
+              </div>
             </nav>
-        </div>
-    </header>
-
-    <!-- Hero Section -->
-    <main class="relative overflow-hidden">
-        <div class="container mx-auto px-6 pt-32 pb-24 text-center">
-            <div class="absolute top-0 left-0 w-full h-full bg-gray-900 opacity-50 z-0"></div>
-            <div class="relative z-10">
-                <h2 class="text-5xl md:text-6xl font-bold leading-tight">
-                    <span class="gradient-text">Innovative Games & Apps</span><br>Built for Tomorrow
-                </h2>
-                <p class="mt-4 text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
-                    We transform your ideas into engaging custom games and powerful mobile applications. Let's build the future, together.
-                </p>
-                <a href="#contact" class="mt-8 inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition-transform transform hover:scale-105">
-                    Get a Free Quote
-                </a>
-            </div>
-        </div>
-    </main>
-
-    <!-- Services Section -->
-    <section id="services" class="py-20 bg-gray-800">
-        <div class="container mx-auto px-6 text-center">
-            <h3 class="text-4xl font-bold mb-2">Our Expertise</h3>
-            <p class="text-gray-400 mb-12">We specialize in creating high-quality digital products.</p>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-gray-900 p-8 rounded-lg">
-                    <h4 class="text-2xl font-bold text-blue-400 mb-4">Custom Game Development</h4>
-                    <p class="text-gray-300">
-                        From concept to launch, we create engaging and immersive games for all platforms. Whether it’s a simple mobile game or a complex multi-platform title, we have the skills to bring your ideas to life.
-                    </p>
-                </div>
-                <div class="bg-gray-900 p-8 rounded-lg">
-                    <h4 class="text-2xl font-bold text-blue-400 mb-4">Mobile App Development</h4>
-                    <p class="text-gray-300">
-                        We design and develop intuitive, high-performance mobile apps for both iOS and Android. We focus on user experience and robust functionality to help your business grow.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="py-20">
-        <div class="container mx-auto px-6 text-center">
-            <h3 class="text-4xl font-bold mb-2">Our Work</h3>
-            <p class="text-gray-400 mb-12">Here are some of the projects we're proud of.</p>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-gray-800 rounded-lg overflow-hidden">
-                    <div class="h-48 bg-gray-700 flex items-center justify-center"><span class="text-gray-500">Project 1 Screenshot</span></div>
-                    <div class="p-6">
-                        <h4 class="font-bold text-xl mb-2">Project Title 1</h4>
-                        <p class="text-gray-400">A brief description of the project and its success.</p>
+          </div>
+        </section>
+      </div>
+      <section id="services" class="py-12 lg:py-24">
+        <div class="container mx-auto px-4">
+          <div class="max-w-lg mx-auto lg:max-w-none">
+            <div class="text-center">
+              <div class="max-w-3xl mx-auto">
+                <p class="text-2xl font-medium mb-20" style="font-family: 'Readex Pro', sans-serif;">We are dedicated to building high-performance, beautiful digital products that users love.</p>
+                <div class="text-left">
+                  <div class="text-black mb-8">
+                    <div class="relative">
+                      <div class="inline-block relative">
+                        <h4 class="text-5xl" style="font-family: 'Readex Pro', sans-serif;">Game Development</h4>
+                      </div>
                     </div>
-                </div>
-                <div class="bg-gray-800 rounded-lg overflow-hidden">
-                    <div class="h-48 bg-gray-700 flex items-center justify-center"><span class="text-gray-500">Project 2 Screenshot</span></div>
-                    <div class="p-6">
-                        <h4 class="font-bold text-xl mb-2">Project Title 2</h4>
-                        <p class="text-gray-400">A brief description of the project and its success.</p>
+                    <div class="relative overflow-hidden h-auto pr-5 mt-12">
+                      <p class="text-lg text-gray-600 mb-12">We build engaging games for all platforms, from hyper-casual mobile games to complex multi-platform experiences with stunning graphics and immersive gameplay.</p>
                     </div>
-                </div>
-                <div class="bg-gray-800 rounded-lg overflow-hidden">
-                    <div class="h-48 bg-gray-700 flex items-center justify-center"><span class="text-gray-500">Project 3 Screenshot</span></div>
-                    <div class="p-6">
-                        <h4 class="font-bold text-xl mb-2">Project Title 3</h4>
-                        <p class="text-gray-400">A brief description of the project and its success.</p>
+                  </div>
+                  <div class="text-black mb-8">
+                    <div class="relative">
+                      <div class="inline-block relative">
+                        <h4 class="text-5xl" style="font-family: 'Readex Pro', sans-serif;">Mobile Apps</h4>
+                      </div>
                     </div>
+                    <div class="relative overflow-hidden h-auto pr-5 mt-12">
+                      <p class="text-lg text-gray-600 mb-12">We design and develop intuitive, high-performance mobile apps for both iOS and Android. We focus on user experience and robust functionality to help your business grow.</p>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-gray-800">
-        <div class="container mx-auto px-6 text-center">
-            <h3 class="text-4xl font-bold mb-2">Let's Build Something Amazing</h3>
-            <p class="text-gray-400 mb-8">Have an idea for a project? We'd love to hear from you.</p>
-            <a href="mailto:hello@kodingstudiosg.org" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition-transform transform hover:scale-105">
-                Contact Us
-            </a>
+      </section>
+     
+      <section id="contact" class="py-12 lg:py-24 xl:py-32 bg-teal-900 relative overflow-hidden">
+        <div class="container mx-auto px-4 relative">
+          <div class="max-w-6xl mx-auto text-center">
+            <h1 class="font-heading text-4xl sm:text-6xl md:text-7xl text-white tracking-sm mb-16" style="font-family: 'Readex Pro', sans-serif;">Have an idea? Let's build it together.</h1><a class="inline-flex py-4 px-6 items-center justify-center text-lg font-medium text-teal-900 border border-lime-500 hover:border-white bg-lime-500 hover:bg-white rounded-full transition duration-200" href="mailto:contact@kodingstudiosg.org">Get a Free Quote</a>
+          </div>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900">
-        <div class="container mx-auto px-6 py-8 text-center text-gray-400">
-            <p>&copy; 2025 Koding Studio SG. All Rights Reserved.</p>
-            <p class="text-sm mt-2">Template inspired by Quantam.</p>
-        </div>
-    </footer>
-
-</body>
+      </section>
+      <div>
+        <section class="relative py-12 lg:py-24 bg-orange-50 overflow-hidden">
+          <div class="container px-4 mx-auto relative">
+            <div class="flex flex-wrap mb-16 -mx-4">
+              <div class="w-full lg:w-2/12 xl:w-2/12 px-4 mb-16 lg:mb-0"><a class="inline-block mb-4 text-2xl font-bold text-teal-900" href="#">Koding Studio SG</a></div>
+              <div class="w-full md:w-7/12 lg:w-6/12 px-4 mb-16 lg:mb-0">
+                <div class="flex flex-wrap -mx-4">
+                </div>
+              </div>
+              <div class="w-full md:w-5/12 lg:w-4/12 px-4">
+                <div class="max-w-sm p-8 bg-teal-900 rounded-2xl mx-auto md:mr-0">
+                  <h5 class="text-xl font-medium text-white mb-4">Get in Touch</h5>
+                  <p class="text-sm text-white opacity-80 leading-normal mb-10">Have a project in mind? We'd love to hear from you. Reach out and let's start the conversation.</p>
+                  <div class="flex flex-col">
+                    <a class="h-12 inline-flex mt-3 py-1 px-5 items-center justify-center font-medium text-teal-900 border border-lime-500 hover:border-white bg-lime-500 hover:bg-white rounded-full transition duration-200" href="mailto:contact@kodingstudiosg.org">Contact Us</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-wrap -mb-3 justify-between">
+                <p class="text-sm text-gray-500 mb-3">&copy; 2025 Koding Studio SG. All Rights Reserved.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
 </html>
