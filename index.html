@@ -4,141 +4,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Koding Studio SG - Custom Games & Mobile Apps</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            margin: 0;
-            background-color: #121212;
-            color: #ffffff;
-            line-height: 1.6;
+            font-family: 'Inter', sans-serif;
         }
-        .container {
-            max-width: 960px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        header {
-            background: #1a1a1a;
-            padding: 20px 0;
-            border-bottom: 1px solid #333;
-        }
-        header .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .logo {
-            font-size: 1.8em;
-            font-weight: bold;
-            color: #4d90fe; /* A nice blue */
-        }
-        nav a {
-            color: #ffffff;
-            text-decoration: none;
-            margin-left: 20px;
-            font-size: 1.1em;
-        }
-        .hero {
-            text-align: center;
-            padding: 100px 20px;
-        }
-        .hero h1 {
-            font-size: 3em;
-            margin-bottom: 10px;
-        }
-        .hero p {
-            font-size: 1.3em;
-            color: #b0b0b0;
-        }
-        .cta-button {
-            display: inline-block;
-            background-color: #4d90fe;
-            color: #ffffff;
-            padding: 15px 30px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-size: 1.1em;
-            margin-top: 20px;
-            transition: background-color 0.3s;
-        }
-        .cta-button:hover {
-            background-color: #357ae8;
-        }
-        .services {
-            padding: 60px 0;
-            text-align: center;
-        }
-        .services h2 {
-            font-size: 2.5em;
-            margin-bottom: 40px;
-        }
-        .service-card {
-            background: #1e1e1e;
-            padding: 40px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            border: 1px solid #333;
-        }
-        .service-card h3 {
-            font-size: 1.8em;
-            color: #4d90fe;
-        }
-        footer {
-            text-align: center;
-            padding: 40px 0;
-            margin-top: 40px;
-            border-top: 1px solid #333;
-            color: #888;
+        .gradient-text {
+            background: -webkit-linear-gradient(#4d90fe, #88c1ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
     </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="bg-gray-900 text-white">
 
-    <header>
-        <div class="container">
-            <div class="logo">Koding Studio SG</div>
-            <nav>
-                <a href="#services">Services</a>
-                <a href="#contact">Contact</a>
+    <!-- Header -->
+    <header class="absolute top-0 left-0 right-0 z-10">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Koding Studio SG</h1>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#services" class="hover:text-blue-400">Services</a>
+                <a href="#portfolio" class="hover:text-blue-400">Portfolio</a>
+                <a href="#contact" class="hover:text-blue-400">Contact</a>
             </nav>
         </div>
     </header>
 
-    <main>
-        <section class="hero">
-            <div class="container">
-                <h1>Crafting Digital Experiences</h1>
-                <p>We build innovative custom games and powerful mobile applications tailored to your vision.</p>
-                <a href="#contact" class="cta-button">Get a Free Quote</a>
+    <!-- Hero Section -->
+    <main class="relative overflow-hidden">
+        <div class="container mx-auto px-6 pt-32 pb-24 text-center">
+            <div class="absolute top-0 left-0 w-full h-full bg-gray-900 opacity-50 z-0"></div>
+            <div class="relative z-10">
+                <h2 class="text-5xl md:text-6xl font-bold leading-tight">
+                    <span class="gradient-text">Innovative Games & Apps</span><br>Built for Tomorrow
+                </h2>
+                <p class="mt-4 text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
+                    We transform your ideas into engaging custom games and powerful mobile applications. Let's build the future, together.
+                </p>
+                <a href="#contact" class="mt-8 inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition-transform transform hover:scale-105">
+                    Get a Free Quote
+                </a>
             </div>
-        </section>
-
-        <section id="services" class="services">
-            <div class="container">
-                <h2>Our Expertise</h2>
-                <div class="service-card">
-                    <h3>Custom Game Development</h3>
-                    <p>From concept to launch, we create engaging and immersive games for all platforms. Whether it's a simple mobile game or a complex multi-platform title, we have the skills to bring your ideas to life.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Mobile App Development</h3>
-                    <p>We design and develop intuitive, high-performance mobile apps for both iOS and Android. We focus on user experience and robust functionality to help your business grow.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="hero">
-             <div class="container">
-                <h2>Let's Build Something Amazing</h2>
-                <p>Have an idea for a project? We'd love to hear from you.</p>
-                <a href="mailto:hello@kodingstudiosg.org" class="cta-button">Contact Us</a>
-            </div>
-        </section>
+        </div>
     </main>
 
-    <footer>
-        <div class="container">
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-4xl font-bold mb-2">Our Expertise</h3>
+            <p class="text-gray-400 mb-12">We specialize in creating high-quality digital products.</p>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-gray-900 p-8 rounded-lg">
+                    <h4 class="text-2xl font-bold text-blue-400 mb-4">Custom Game Development</h4>
+                    <p class="text-gray-300">
+                        From concept to launch, we create engaging and immersive games for all platforms. Whether it’s a simple mobile game or a complex multi-platform title, we have the skills to bring your ideas to life.
+                    </p>
+                </div>
+                <div class="bg-gray-900 p-8 rounded-lg">
+                    <h4 class="text-2xl font-bold text-blue-400 mb-4">Mobile App Development</h4>
+                    <p class="text-gray-300">
+                        We design and develop intuitive, high-performance mobile apps for both iOS and Android. We focus on user experience and robust functionality to help your business grow.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-4xl font-bold mb-2">Our Work</h3>
+            <p class="text-gray-400 mb-12">Here are some of the projects we're proud of.</p>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-800 rounded-lg overflow-hidden">
+                    <div class="h-48 bg-gray-700 flex items-center justify-center"><span class="text-gray-500">Project 1 Screenshot</span></div>
+                    <div class="p-6">
+                        <h4 class="font-bold text-xl mb-2">Project Title 1</h4>
+                        <p class="text-gray-400">A brief description of the project and its success.</p>
+                    </div>
+                </div>
+                <div class="bg-gray-800 rounded-lg overflow-hidden">
+                    <div class="h-48 bg-gray-700 flex items-center justify-center"><span class="text-gray-500">Project 2 Screenshot</span></div>
+                    <div class="p-6">
+                        <h4 class="font-bold text-xl mb-2">Project Title 2</h4>
+                        <p class="text-gray-400">A brief description of the project and its success.</p>
+                    </div>
+                </div>
+                <div class="bg-gray-800 rounded-lg overflow-hidden">
+                    <div class="h-48 bg-gray-700 flex items-center justify-center"><span class="text-gray-500">Project 3 Screenshot</span></div>
+                    <div class="p-6">
+                        <h4 class="font-bold text-xl mb-2">Project Title 3</h4>
+                        <p class="text-gray-400">A brief description of the project and its success.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-4xl font-bold mb-2">Let's Build Something Amazing</h3>
+            <p class="text-gray-400 mb-8">Have an idea for a project? We'd love to hear from you.</p>
+            <a href="mailto:hello@kodingstudiosg.org" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition-transform transform hover:scale-105">
+                Contact Us
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-400">
             <p>&copy; 2025 Koding Studio SG. All Rights Reserved.</p>
+            <p class="text-sm mt-2">Template inspired by Quantam.</p>
         </div>
     </footer>
 
