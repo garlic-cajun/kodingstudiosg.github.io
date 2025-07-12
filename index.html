@@ -1,7 +1,146 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koding Studio SG - Custom Games & Mobile Apps</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            background-color: #121212;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background: #1a1a1a;
+            padding: 20px 0;
+            border-bottom: 1px solid #333;
+        }
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #4d90fe; /* A nice blue */
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 1.1em;
+        }
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 1.3em;
+            color: #b0b0b0;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #4d90fe;
+            color: #ffffff;
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.1em;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+        .cta-button:hover {
+            background-color: #357ae8;
+        }
+        .services {
+            padding: 60px 0;
+            text-align: center;
+        }
+        .services h2 {
+            font-size: 2.5em;
+            margin-bottom: 40px;
+        }
+        .service-card {
+            background: #1e1e1e;
+            padding: 40px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #333;
+        }
+        .service-card h3 {
+            font-size: 1.8em;
+            color: #4d90fe;
+        }
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            margin-top: 40px;
+            border-top: 1px solid #333;
+            color: #888;
+        }
+    </style>
+</head>
 <body>
-<h1>Hello Koding Studio SG</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+    <header>
+        <div class="container">
+            <div class="logo">Koding Studio SG</div>
+            <nav>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Crafting Digital Experiences</h1>
+                <p>We build innovative custom games and powerful mobile applications tailored to your vision.</p>
+                <a href="#contact" class="cta-button">Get a Free Quote</a>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="container">
+                <h2>Our Expertise</h2>
+                <div class="service-card">
+                    <h3>Custom Game Development</h3>
+                    <p>From concept to launch, we create engaging and immersive games for all platforms. Whether it's a simple mobile game or a complex multi-platform title, we have the skills to bring your ideas to life.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Mobile App Development</h3>
+                    <p>We design and develop intuitive, high-performance mobile apps for both iOS and Android. We focus on user experience and robust functionality to help your business grow.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="hero">
+             <div class="container">
+                <h2>Let's Build Something Amazing</h2>
+                <p>Have an idea for a project? We'd love to hear from you.</p>
+                <a href="mailto:hello@kodingstudiosg.org" class="cta-button">Contact Us</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Koding Studio SG. All Rights Reserved.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
